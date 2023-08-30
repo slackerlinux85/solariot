@@ -21,9 +21,9 @@
 # THE SOFTWARE.
 
 from SungrowModbusTcpClient import SungrowModbusTcpClient
-from SungrowModbusWebClient import SungrowModbusWebClient
+# from SungrowModbusWebClient import SungrowModbusWebClient FIXME: ImportError: cannot import name 'BaseModbusClient' from 'pymodbus.client'
 from pymodbus.payload import BinaryPayloadDecoder
-from pymodbus.client.sync import ModbusTcpClient
+from pymodbus.client.tcp import ModbusTcpClient
 from pymodbus.constants import Endian
 from influxdb import InfluxDBClient
 from importlib import import_module

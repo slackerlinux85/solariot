@@ -1,7 +1,7 @@
 paho-mqtt>=1.5.1
-pymodbus==2.4.0
+pymodbus>=3.4.1
 dweepy>=0.3.0
 prometheus-client>=0.9
 influxdb>=5.3.1
-SungrowModbusTcpClient>=0.1.5
-SungrowModbusWebClient>=0.2.4
+git+https://github.com/slackerlinux85/SungrowModbusTcpClient.git@fix-pymodbus-errors # SungrowModbusTcpClient>=0.1.7 needed for pymodbus > 3.0.0 but only 0.1.6 released. also forked to modify code a little to work
+git+https://github.com/bohdan-s/SungrowModbusWebClient.git@main # SungrowModbusWebClient>=0.3.3 needed for pymodbus > 3.0.0 but changes hasnt been released
